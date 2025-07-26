@@ -1,0 +1,160 @@
+/* Default Layout */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #1d7e76, #82ce9f);
+    background-image: url("./Images/background%201.jpg");
+    background-size: cover;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    height: 7.5rem;
+    background-color: #39b18d;
+    opacity: 0.8;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+header .logo {
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    height: 90px;
+    width: 110px;
+}
+
+nav {
+    min-width: 10rem;
+    margin-top: 1.8rem;
+    margin-right: 4rem;
+}
+
+nav ul {
+    display: flex;
+    height: 2rem;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+}
+
+nav ul a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #69a5e0;
+    cursor: pointer;
+}
+
+nav ul a:active {
+    color: #ffffff;
+}
+
+/* Main */
+
+/*Company Intro*/
+
+.company-intro {
+    display: flex;
+    justify-content: space-between;
+    min-height: 600px;
+    width: 94%;
+    background-image: url("./Images/background%202.jpg");
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    border-radius: 1rem;
+}
+
+body.services-page .company-intro {
+    display: flex;
+    justify-content: space-between;
+    min-height: 600px;
+    width: 94%;
+    background-image: url("./Images/background%203.jpg");
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    border-radius: 1rem;
+}
+
+.company-intro h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding-top: 10rem;
+    padding-left: 4rem;
+}
+
+.company-intro h2 {
+    font-size: 2.5rem;
+}
+
+.company-intro .quote1 {
+    padding-left: 8rem;
+}
+
+.company-intro .quote2 {
+    padding-left: 12rem;
+}
+
+.company-intro .quote3 {
+    padding-left: 18rem;
+}
+
+.company-intro .quote4 {
+    padding-left: 24rem;
+}
+
+.company-intro img {
+    height: 500px;
+    padding: 6.8rem;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #39b18d;
+    min-height: 80px;
+    opacity: 0.8;
+    margin-top: 2rem;
+    padding: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+footer .contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h3 {
+    text-align: center;
+    margin-bottom: 0px;
+}
