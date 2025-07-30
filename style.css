@@ -17,6 +17,12 @@ body {
     min-height: 100vh;
 }
 
+.feature-section,
+.feature-row,
+.reverse-feature {
+    overflow-x: hidden;
+}
+
 
 /* Header */
 
