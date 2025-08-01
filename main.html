@@ -21,9 +21,20 @@
             <nav>
                 <ul>
                     <li><a style="color: #835454;" href="main.html">Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown"><a href="#services">Services</a>
+                        <!-- For next time
+                        <ul class="dropdown-menu">
+                            <li><a href="#self-leveling">Self-Leveling</a></li>
+                            <li><a href="#patching">Patching</a></li>
+                            <li><a href="#grinding">Grinding</a></li>
+                            <li><a href="#scarifying">Scarifying</a></li>
+                            <li><a href="#chipping">Chipping</a></li>
+                        </ul>
+                        -->
+                    </li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,41 +47,48 @@
                     <h2 class="quote4">Built to last".</h2>
                 </div>
             </section>
-            <section class="about" data-aos="fade-down" data-aos-easing="linear" data-aos-offset="500"
+            <section class="about" id="about" data-aos="fade-down" data-aos-easing="linear" data-aos-offset="500"
                 data-aos-duration="400">
                 <h1>About</h1>
                 <div class="company-info">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ducimus nulla quas doloremque amet
-                        consequuntur sit vero. Corporis harum fuga,
-                        ea dolorum perspiciatis aspernatur vel ipsa eos quisquam nobis rerum!
+                    <p>
+                        Flat Master Leveling Inc. is a GTA-based company specializing in floor preparation services like
+                        self-leveling,
+                        grinding, patching, and scarifying. We’re a small team that takes pride in doing solid, reliable
+                        work with attention to detail and no shortcuts. Whether it’s a renovation or new construction,
+                        we’re here to make sure your floors are done right from the start.
                     </p>
                     <img src="Images/Logo/FML Logo.png" alt="Company Logo">
                 </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <h1>Services</h1>
                 <div class="feature-section">
                     <div class="feature-row" data-aos="fade-right" data-aos-offset="400">
                         <div class="feature-text">
                             <h2 id="self-leveling">Self-Leveling</h2>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ea atque, et sint eveniet soluta
+                                Prepared subfloor surface and applied a high-performance self-leveling compound to
+                                create a smooth, flat, and durable finish. Work included cleaning, priming, pouring, and
+                                finishing in accordance with product specifications and site requirements.
                             </p>
                         </div>
                         <div class="feature-image">
-                            <img src="Images/Services/Self Leveling.jpg" alt="grinding">
+                            <img src="Images/Services/Self Leveling.jpg"
+                                alt="Worker measuring a piece of wood with a tape measure">
                         </div>
                     </div>
                     <div class="reverse-feature" data-aos="fade-left" data-aos-offset="400">
                         <div class="feature-image">
-                            <img src="Images/Services/Patching.jpg" alt="grinding">
+                            <img src="Images/Services/Patching.jpg"
+                                alt="Worker spreading tile adhesive with a notched trowel.">
                         </div>
                         <div class="feature-text">
                             <h2 id="patching">Patching</h2>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ea atque, et sint eveniet soluta
+                                Repaired damaged concrete areas by cleaning, preparing, and patching cracks, holes, and
+                                surface spalls using appropriate bonding agents and patching compounds. Work ensures
+                                improved surface integrity and prepares area for final finishes.
                             </p>
                         </div>
                     </div>
@@ -78,23 +96,27 @@
                         <div class="feature-text">
                             <h2 id="grinding">Grinding</h2>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ea atque, et sint eveniet soluta
+                                Performed precision grinding to smooth uneven concrete surfaces, remove surface
+                                coatings, and prepare subfloor for finishing. Work completed using industrial-grade
+                                grinders with dust-control systems for safety and cleanliness.
                             </p>
                         </div>
                         <div class="feature-image">
-                            <img src="Images/Services/Grinding.jpg" alt="grinding">
+                            <img src="Images/Services/Grinding.jpg" alt="Worker grinding metal with sparks flying.">
                         </div>
                     </div>
                     <div class="reverse-feature" data-aos="fade-left" data-aos-offset="400">
                         <div class="feature-image">
-                            <img src="Images/Services/Scarifying.jpg" alt="grinding">
+                            <img src="Images/Services/Scarifying.jpg"
+                                alt="Worker using a drill to repair concrete stairs.">
                         </div>
                         <div class="feature-text">
                             <h2 id="scarifying">Scarifying</h2>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ea atque, et sint eveniet soluta
+                                Provided mechanical scarifying (surface milling) to roughen and remove layers of
+                                concrete, coatings, or adhesives in preparation for resurfacing or leveling. Work
+                                completed using heavy-duty scarifier machines with dust extraction systems to maintain
+                                safety and cleanliness on site.
                             </p>
                         </div>
                     </div>
@@ -102,17 +124,19 @@
                         <div class="feature-text">
                             <h2 id="chipping">Chipping</h2>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ea atque, et sint eveniet soluta
+                                Performed controlled concrete chipping and surface preparation for structural
+                                reinforcement and leveling. Work includes removal of loose or deteriorated concrete
+                                using electric/pneumatic chipping tools, surface cleaning, and disposal of debris in
+                                compliance with site safety standards.
                             </p>
                         </div>
                         <div class="feature-image">
-                            <img src="Images/Services/Chipping.jpg" alt="grinding">
+                            <img src="Images/Services/Chipping.jpg" alt="Worker chiseling stone.">
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h1>Projects</h1>
                 <div class="before">
                     <h2>Before</h2>
@@ -144,19 +168,19 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="contacts">
             <section class="contacts">
                 <div class="phone">
                     <h2>Contacts</h2>
-                    <h3>123132123</h3>
-                    <h3>123456879</h3>
+                    <h3>(647) 906-5565</h3>
+                    <h3>(647) 450-2012</h3>
                 </div>
                 <div class="email">
                     <h2>Email</h2>
                     <h3>Hashmat.com</h3>
                 </div>
             </section>
-            <h3>@ 2025 Hashmat Bariz</h3>
+            <h3>@ 2025 Flat Master Leveling Inc. All rights reserved.</h3>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
