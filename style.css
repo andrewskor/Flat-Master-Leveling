@@ -152,7 +152,7 @@ body.services-page .company-intro {
     background-image: url('Images/cement.jpg');
 }
 
-.about h1 {
+.about h2 {
     margin-top: 0;
     margin-left: 8rem;
     padding-top: 2rem;
@@ -168,11 +168,14 @@ body.services-page .company-intro {
 
 .company-info p {
     font-size: 2rem;
+    text-align: left;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 /*Services*/
 
-.services h1 {
+.services h2 {
     margin-left: 8rem;
     font-size: 3rem;
 }
@@ -206,12 +209,12 @@ body.services-page .company-intro {
 
 /*Projects*/
 
-.projects h1 {
+.projects h2 {
     font-size: 3rem;
     margin-left: 8rem;
 }
 
-.projects h2 {
+.projects h3 {
     text-align: center;
     font-size: 2rem;
 }
@@ -317,8 +320,10 @@ footer h3 {
     }
 
     .company-info p {
-        text-align: center;
+        padding: 2rem 6rem;
+        text-align: left;
         font-size: 2rem;
+        color: #000000;
     }
 
     /*Services*/
@@ -350,12 +355,12 @@ footer h3 {
 
     /*Projects*/
 
-    .projects h1 {
+    .projects h2 {
         text-align: center;
         margin-left: 0;
     }
 
-    .projects h2 {
+    .projects h3 {
         text-align: center;
         font-size: 2rem;
     }
@@ -378,5 +383,24 @@ footer h3 {
         flex-wrap: wrap;
         gap: 20px;
         margin-bottom: 4rem;
+    }
+
+    /*Footer*/
+
+    footer {
+        background: linear-gradient(to right, #ADA996, #F2F2F2, #fffcdc);
+        min-height: 80px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    footer .contacts {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 0.8rem;
+    }
+
+    footer #copyright {
+        font-size: 1.2rem;
     }
 }

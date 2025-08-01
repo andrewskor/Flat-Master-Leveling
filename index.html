@@ -49,7 +49,7 @@
             </section>
             <section class="about" id="about" data-aos="fade-down" data-aos-easing="linear" data-aos-offset="500"
                 data-aos-duration="400">
-                <h1>About</h1>
+                <h2>About</h2>
                 <div class="company-info">
                     <p>
                         Flat Master Leveling Inc. is a GTA-based company specializing in floor preparation services like
@@ -62,11 +62,11 @@
                 </div>
             </section>
             <section class="services" id="services">
-                <h1>Services</h1>
+                <h2>Services</h2>
                 <div class="feature-section">
                     <div class="feature-row" data-aos="fade-right" data-aos-offset="400">
                         <div class="feature-text">
-                            <h2 id="self-leveling">Self-Leveling</h2>
+                            <h3 id="self-leveling">Self-Leveling</h3>
                             <p>
                                 Prepared subfloor surface and applied a high-performance self-leveling compound to
                                 create a smooth, flat, and durable finish. Work included cleaning, priming, pouring, and
@@ -84,7 +84,7 @@
                                 alt="Worker spreading tile adhesive with a notched trowel.">
                         </div>
                         <div class="feature-text">
-                            <h2 id="patching">Patching</h2>
+                            <h3 id="patching">Patching</h3>
                             <p>
                                 Repaired damaged concrete areas by cleaning, preparing, and patching cracks, holes, and
                                 surface spalls using appropriate bonding agents and patching compounds. Work ensures
@@ -94,7 +94,7 @@
                     </div>
                     <div class="feature-row" data-aos="fade-right" data-aos-offset="400">
                         <div class="feature-text">
-                            <h2 id="grinding">Grinding</h2>
+                            <h3 id="grinding">Grinding</h3>
                             <p>
                                 Performed precision grinding to smooth uneven concrete surfaces, remove surface
                                 coatings, and prepare subfloor for finishing. Work completed using industrial-grade
@@ -111,7 +111,7 @@
                                 alt="Worker using a drill to repair concrete stairs.">
                         </div>
                         <div class="feature-text">
-                            <h2 id="scarifying">Scarifying</h2>
+                            <h3 id="scarifying">Scarifying</h3>
                             <p>
                                 Provided mechanical scarifying (surface milling) to roughen and remove layers of
                                 concrete, coatings, or adhesives in preparation for resurfacing or leveling. Work
@@ -122,7 +122,7 @@
                     </div>
                     <div class="feature-row" data-aos="fade-right" data-aos-offset="400">
                         <div class="feature-text">
-                            <h2 id="chipping">Chipping</h2>
+                            <h3 id="chipping">Chipping</h3>
                             <p>
                                 Performed controlled concrete chipping and surface preparation for structural
                                 reinforcement and leveling. Work includes removal of loose or deteriorated concrete
@@ -137,9 +137,9 @@
                 </div>
             </section>
             <section class="projects" id="projects">
-                <h1>Projects</h1>
+                <h2>Projects</h2>
                 <div class="before">
-                    <h2>Before</h2>
+                    <h3>Before</h3>
                     <div class="before-images">
                         <img src="Images/projects/before/before 1.jpg" alt="" data-aos="flip-left"
                             data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 <div class="after">
-                    <h2>After</h2>
+                    <h3>After</h3>
                     <div class="after-images">
                         <img src="Images/projects/after/after 1.jpg" alt="" data-aos="flip-right"
                             data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -180,7 +180,7 @@
                     <h3>Hashmat.com</h3>
                 </div>
             </section>
-            <h3>@ 2025 Flat Master Leveling Inc. All rights reserved.</h3>
+            <h3 id="copyright">@ 2025 Flat Master Leveling Inc. All rights reserved.</h3>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -188,7 +188,8 @@
         AOS.init({
             duration: 1000,
             once: false,
-            mirror: true
+            mirror: true,
+            startEvent: 'DOMContentLoaded'
         });
     </script>
 </body>
