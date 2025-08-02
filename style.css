@@ -1,4 +1,10 @@
 /* Default Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     margin: 0;
@@ -19,10 +25,11 @@ body {
 
 .feature-section,
 .feature-row,
-.reverse-feature {
+.reverse-feature,
+.before-images,
+.after-images {
     overflow-x: hidden;
 }
-
 
 /* Header */
 
@@ -269,7 +276,7 @@ footer h3 {
 
 /*Max 1100*/
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width:710) and (max-width: 1100px) {
 
     /*Header*/
 
@@ -403,4 +410,216 @@ footer h3 {
     footer #copyright {
         font-size: 1.2rem;
     }
+}
+
+/*Below 710*/
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header layout fix */
+    header {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        display: none;
+    }
+
+    header .logo {
+        height: 60px;
+        width: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    /*Company-intro*/
+
+    .company-intro {
+        min-height: 150px;
+        text-align: center;
+    }
+
+    .company-intro h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+
+    .company-intro h2 {
+        font-size: 1rem;
+    }
+
+    .company-intro .quote1 {
+        padding-left: 0;
+    }
+
+    .company-intro .quote2 {
+        padding-left: 0;
+    }
+
+    .company-intro .quote3 {
+        padding-left: 0;
+    }
+
+    .company-intro .quote4 {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-bottom: 4rem;
+    }
+
+    /* About */
+
+    .about {
+        padding-top: 0;
+        background-image: url('Images/cement.jpg');
+    }
+
+    .about h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .company-info img {
+        height: 180px;
+        width: 230px;
+    }
+
+    .about .company-info {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .company-info p {
+        text-align: left;
+        font-size: 1rem;
+        color: #000000;
+    }
+
+    /*Services*/
+
+    .services h2 {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .feature-row {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .reverse-feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .feature-section .feature-image img {
+        height: 200px;
+        width: 250px;
+    }
+
+    .feature-section p {}
+
+
+    /*Projects*/
+
+    .projects h2 {
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .projects img {
+        height: 150px;
+        width: 1500px;
+    }
+
+    .projects .before-images {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .projects .after {
+        margin-top: 4rem;
+    }
+
+    .projects .after-images {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+
+    /*Footer*/
+
+    footer {
+        background: linear-gradient(to right, #ADA996, #F2F2F2, #fffcdc);
+        min-height: 80px;
+        opacity: 0.8;
+        margin-top: 2rem;
+        padding: 0;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+
+    footer .contacts {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer h2 {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    footer h3 {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0px;
+    }
+
 }
