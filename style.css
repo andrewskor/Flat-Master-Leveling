@@ -65,6 +65,7 @@ nav ul {
     display: flex;
     height: 2rem;
     list-style-type: none;
+    margin-top: 1.2rem;
 }
 
 nav ul li {
@@ -97,7 +98,7 @@ nav ul a:active {
     */
     min-height: 500px;
     width: 100%;
-    background-image: url("./Images/background%203.jpg");
+    background-image: url("./Images/background%203.webp");
     background-size: cover;
     background-position: center;
     opacity: 0.9;
@@ -143,7 +144,7 @@ nav ul a:active {
 
 .about {
     padding-top: 0;
-    background-image: url('Images/cement.jpg');
+    background-image: url('Images/cement-texture.webp');
 }
 
 .about h2 {
@@ -211,6 +212,7 @@ nav ul a:active {
 .projects h3 {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .projects img {
@@ -251,6 +253,7 @@ footer {
 footer .contacts {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 1rem;
 }
 
 footer h3 {
@@ -298,7 +301,6 @@ footer h3 {
 
     .about {
         padding-top: 0;
-        background-image: url('Images/cement.jpg');
     }
 
     .about h1 {
@@ -477,7 +479,6 @@ footer h3 {
 
     .about {
         padding-top: 0;
-        background-image: url('Images/cement.jpg');
     }
 
     .about h2 {
@@ -622,7 +623,6 @@ footer h3 {
 
     footer h2 {
         font-size: 0.6rem;
-        padding-top: 1rem;
     }
 
     footer h3 {
