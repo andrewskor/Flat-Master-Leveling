@@ -182,7 +182,17 @@ nav ul a:active {
 
 .services h2 {
     margin-left: 8rem;
+    padding-top: 2.5rem;
     font-size: 3rem;
+}
+
+.services h3 {
+    font-size: 1.5rem;
+}
+
+.services p {
+    font-size: 1.2rem;
+    padding-top: 1rem;
 }
 
 .feature-row {
@@ -273,6 +283,21 @@ footer h3 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 0px;
+    padding-bottom: 0.8rem;
+}
+
+footer .phone-number {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+}
+
+footer .phone h2 {
+    margin-left: 2rem;
+}
+
+footer .phone h3 {
+    margin-left: 2rem;
 }
 
 /*Responsive*/
@@ -455,6 +480,21 @@ footer h3 {
         display: block;
     }
 
+    .mobile-nav ul {
+        margin-left: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .mobile-nav li {
+        margin-right: 1.2rem;
+    }
+
+    .mobile-nav img {
+        height: 22px;
+        width: 22px;
+    }
+
     /*Company-intro*/
 
     .company-intro {
@@ -532,6 +572,7 @@ footer h3 {
     .services h2 {
         margin-left: 1rem;
         margin-top: 2rem;
+        padding-top: 0.4rem;
         font-size: 1.5rem;
     }
 
@@ -647,5 +688,20 @@ footer h3 {
     footer #copyright {
         font-size: 0.4rem;
         padding: 2rem auto;
+    }
+
+    footer .phone-number {
+        display: flex;
+        flex-direction: column;
+        height: 2rem;
+    }
+
+    footer .phone h3 {
+        margin-top: 0.5rem;
+        padding-bottom: 0rem;
+    }
+
+    footer .email h3 {
+        margin-top: 0.25rem;
     }
 }
