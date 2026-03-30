@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/styles/nav.css">
+	<link rel="stylesheet" href="/styles/main-style.css">
+	<link rel="stylesheet" href="/styles/self-level.css">
+	<link rel="stylesheet" href="/styles/footer.css">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FlatMasterLvL</title>
+</head>
+<body>
+	<header>
+		<div class="company-logo">
+			<a href="/" class="logo"><img src="/images/flatMasterLvL-Logo.png" alt="Company Logo" class="nav-home-logo"></a>
+			<h2 class="company-name">FlatMasterLvL.</h2>
+		</div>
+		<nav>
+			<ul>
+				<li class="dropdown dropdown-js">
+					<a href="#">Services</a>
+					<ul class="dropdown-menu">
+						<li><a th:href="@{/self-level}">Self-Level</a></li>
+						<li><a th:href="@{/epoxy}">Epoxy Flooring</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><a href="#footer">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class = "self-level-intro">
+			<div class="self-level-quotes">
+			    <h1 class="tagline">Self-Leveling Services</h1>
+			</div>
+		</section>
+		<section>
+		   	<div class="self-level-info">
+				<p>
+				    At Flat Master Leveling Inc., we specialize in professional self-leveling services across the GTA, 
+				    carefully preparing your floors to achieve a perfectly flat and smooth surface. 
+				    Whether you're renovating an existing space or working on new construction, 
+				    our team ensures every floor is leveled with precision and attention 
+				    to detail — eliminating uneven surfaces, low spots, and imperfections to create a solid, 
+				    reliable foundation that stands the test of time.
+				</p>
+                <!--  
+                <img class="section-company-logo" src="/images/sample-logo.png" alt="Company Logo">
+                -->
+	        </div>
+		</section>
+		<section class="services">
+		  <div class="vslider-root" id="vroot">
+		    <div class="vslider-bg active" id="bg0" style="background-image:url('/images/self-level/services/Self-Leveling.jpg')"></div>
+		    <div class="vslider-bg next-bg" id="bg1" style="background-image:url('/images/self-level/services/Patching.jpg')"></div>
+		    <div class="vslider-bg" id="bg2" style="background-image:url('/images/self-level/services/Grinding.jpg')"></div>
+		    <div class="vslider-bg" id="bg3" style="background-image:url('/images/self-level/services/Scarifying.jpeg')"></div>
+		    <div class="vslider-bg" id="bg4" style="background-image:url('/images/self-level/services/Chipping.jpg')"></div>
+		
+		    <div class="vslider-stage">
+		      <button class="vslider-btn" id="vprev">
+		        <svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+		      </button>
+		      <div class="vslider-cards" id="vcards">
+		        <div class="vcard" data-i="0" data-state="current">
+		          <img th:src="@{/images/self-level/services/Self-Leveling.jpg}" alt="Self-Leveling">
+		          <div class="vcard-label"><span class="vtitle">Self-Leveling</span><span class="vsub">Floor Preparation</span></div>
+		        </div>
+		        <div class="vcard" data-i="1" data-state="next">
+		          <img th:src="@{/images/self-level/services/Patching.jpg}" alt="Patching">
+		          <div class="vcard-label"><span class="vtitle">Patching</span><span class="vsub">Surface Repair</span></div>
+		        </div>
+		        <div class="vcard" data-i="2" data-state="hidden-next">
+		          <img th:src="@{/images/self-level/services/Grinding.jpg}" alt="Grinding">
+		          <div class="vcard-label"><span class="vtitle">Grinding</span><span class="vsub">Surface Prep</span></div>
+		        </div>
+		        <div class="vcard" data-i="3" data-state="hidden-next">
+		          <img th:src="@{/images/self-level/services/Scarifying.jpeg}" alt="Scarifying">
+		          <div class="vcard-label"><span class="vtitle">Scarifying</span><span class="vsub">Surface Milling</span></div>
+		        </div>
+		        <div class="vcard" data-i="4" data-state="hidden-prev">
+		          <img th:src="@{/images/self-level/services/Chipping.jpg}" alt="Chipping">
+		          <div class="vcard-label"><span class="vtitle">Chipping</span><span class="vsub">Concrete Removal</span></div>
+		        </div>
+		      </div>
+		      <button class="vslider-btn" id="vnext">
+		        <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+		      </button>
+		    </div>
+		
+		    <div class="vslider-info">
+		      <p class="vslider-desc" id="vdesc">Prepared subfloor surface and applied a high-performance self-leveling compound to create a smooth, flat, and durable finish.</p>
+		      <div class="vslider-dots" id="vdots">
+		        <button class="vdot active" data-i="0"></button>
+		        <button class="vdot" data-i="1"></button>
+		        <button class="vdot" data-i="2"></button>
+		        <button class="vdot" data-i="3"></button>
+		        <button class="vdot" data-i="4"></button>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="projects" id="projects">
+		  <h2>Projects</h2>
+		  <div class="ba-cards" id="ba-cards">
+		    <div class="ba-pair">
+		      <div class="ba-pair-inner">
+		        <img class="ba-img before" th:src="@{/images/self-level/recent-projects/before/before 1.webp}" alt="Before 1">
+		        <img class="ba-img after" th:src="@{/images/self-level/recent-projects/after/after 1.webp}" alt="After 1">
+		        <span class="ba-badge before-badge">Before</span>
+		        <span class="ba-badge after-badge">After</span>
+		      </div>
+		    </div>
+		    <div class="ba-pair">
+		      <div class="ba-pair-inner">
+		        <img class="ba-img before" th:src="@{/images/self-level/recent-projects/before/before 2.webp}" alt="Before 2">
+		        <img class="ba-img after" th:src="@{/images/self-level/recent-projects/after/after 2.webp}" alt="After 2">
+		        <span class="ba-badge before-badge">Before</span>
+		        <span class="ba-badge after-badge">After</span>
+		      </div>
+		    </div>
+		    <div class="ba-pair">
+		      <div class="ba-pair-inner">
+		        <img class="ba-img before" th:src="@{/images/self-level/recent-projects/before/before 3.webp}" alt="Before 3">
+		        <img class="ba-img after" th:src="@{/images/self-level/recent-projects/after/after 3.webp}" alt="After 3">
+		        <span class="ba-badge before-badge">Before</span>
+		        <span class="ba-badge after-badge">After</span>
+		      </div>
+		    </div>
+		    <div class="ba-pair">
+		      <div class="ba-pair-inner">
+		        <img class="ba-img before" th:src="@{/images/self-level/recent-projects/before/before 4.webp}" alt="Before 4">
+		        <img class="ba-img after" th:src="@{/images/self-level/recent-projects/after/after 4.webp}" alt="After 4">
+		        <span class="ba-badge before-badge">Before</span>
+		        <span class="ba-badge after-badge">After</span>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="ba-toggle-all" id="ba-toggle-all">Show Afters</button>
+		</section>
+	</main>
+	<footer id="footer">
+	    <section class="contacts">
+	        <div class="phone">
+	            <h2>Contacts</h2>
+	            <div class="phone-number">
+	                <h3>(647) 906-5565</h3>
+	            </div>
+	        </div>
+			<div class="socials">
+			    <h2>Socials</h2>
+			    <ul>
+			        <li>
+			            <a href="https://wa.me/16479065565" target="_blank">
+			                <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" style="height: 1rem; vertical-align: middle; margin-right: 4px;" />
+			                WhatsApp
+			            </a>
+			        </li>
+			        <li>
+						<a href="https://www.instagram.com/torontoepoxyleveling?igsh=MWc1M2RtN3ZxZjV1eQ%3D%3D&utm_source=qr" target="_blank">
+						    <img 
+						        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" 
+						        alt="Instagram" 
+   						 		style="height: 1rem; vertical-align: middle; margin-right: 4px; filter: invert(28%) sepia(80%) saturate(800%) hue-rotate(290deg) brightness(90%);" 
+						    />
+						    Instagram
+						</a>
+			        </li>
+			    </ul>
+			</div>
+			<div class="email">
+			    <h2>Email</h2>
+			    <h3>
+			        <a href="mailto:Flatmasterleveling@gmail.com" style="color: #5de0e6; text-decoration: none;">
+					   <img 
+						    src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" 
+						    alt="Gmail" 
+						    style="height: 1rem; vertical-align: middle; margin-right: 4px; filter: invert(27%) sepia(89%) saturate(1000%) hue-rotate(340deg) brightness(95%);" 
+						/>
+			            Flatmasterleveling@gmail.com
+			        </a>
+			    </h3>
+			</div>
+	    </section>
+	    <h3 id="copyright">@ 2025 Flat Master Leveling Inc. All rights reserved.</h3>
+	</footer>
+	
+	<script src="/js/dropdown.js"></script>
+	<script src="/js/self-level-service.js"></script>
+</body>
+</html>

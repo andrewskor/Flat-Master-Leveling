@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#epoxy-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Epoxy Service */
+
+.epoxy-quotes {
+    text-align: center;
+    padding: 6rem 4rem 2rem 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.epoxy-quotes .tagline {
+    font-size: 2.3rem;
+    color: #F0EDE8;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* Epoxy info */
+
+.epoxy-info {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.epoxy-info p {
+    font-size: 1.3rem;
+    color: #F0EDE8;
+    letter-spacing: 0.10em;
+    line-height: 1.8;
+    text-transform: none;
+    font-weight: 400;
+}
+
+/* Epoxy Projects */
+.epoxy-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.epoxy-img-wrap {
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.epoxy-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.epoxy-img-wrap:hover img {
+    transform: scale(1.04);
+}

@@ -1,0 +1,92 @@
+footer {
+    position: relative;
+    z-index: 1;
+    opacity: 75%;
+    background-color: #0D1F2D;
+    border-top: 1px solid rgba(58, 174, 220, 0.2);
+    padding: 2.5rem 4rem;  /* more vertical breathing room */
+    width: 100%;
+    color: #3AAEDC;
+}
+
+footer .contacts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(58, 174, 220, 0.15);
+}
+
+footer .contacts > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+footer h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(58, 174, 220, 0.5);
+    margin: 0;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #F0EDE8;
+    margin: 0;
+    text-align: center;
+}
+
+footer .socials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+footer .socials a {
+    color: #F0EDE8;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+footer .socials a:hover {
+    color: #3AAEDC;
+}
+
+footer .email a {
+    color: #F0EDE8;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+footer .email a:hover {
+    color: #3AAEDC;
+}
+
+footer .phone h3 {
+    color: #F0EDE8;
+}
+
+footer #copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    color: #F0EDE8;
+    letter-spacing: 0.1em;
+}
