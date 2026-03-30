@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    max-width: 100%;
+    padding: 0 2rem;
+    font-size: 1rem;
+    background-color: #0D1F2D;
+    opacity: 95%;
+    position: relative;
+    z-index: 100;
+    overflow: visible;
+}
+
+header .company-logo {
+    color: #3AAEDC;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+header nav { display: flex; }
+
+header .nav-home-logo {
+    height: 15rem;
+    width: 15rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-radius: 7.5rem;
+    object-fit: contain;
+    background-color: transparent;
+    mix-blend-mode: lighten;
+    position: relative;
+    z-index: 101;
+}
+
+header .company-name {
+    padding-top: 0;
+    position: absolute;
+    top: 2.5rem;
+    left: 14rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25rem;
+    margin-top: 0;
+    align-items: center;
+}
+
+ul { list-style-type: none; padding: 0; margin: 0; }
+
+header li a {
+    color: #3AAEDC;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.dropdown { position: relative; }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0D1F2D;
+    width: 9rem;
+    opacity: 70%;
+}
+
+.dropdown-menu li { margin-top: 1rem; padding: 0.5rem; }
+.dropdown-menu a { font-size: 1.5rem; }
+.dropdown-menu.show { display: block; }
