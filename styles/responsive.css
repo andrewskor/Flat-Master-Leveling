@@ -17,17 +17,13 @@
     flex-shrink: 0;
   }
 
-  header .nav-home-logo {
-    height: 3.5rem;
-    width: 3.5rem;
-    margin: 0;
+  header .company-name {
+    display: none;
   }
 
-  header .company-name {
-    position: static;
-    font-size: 0.9rem;
-    padding-top: 0;
-    white-space: nowrap;
+  header .nav-home-logo {
+    height: 5rem;
+    width: 5rem;
   }
 
   nav {
