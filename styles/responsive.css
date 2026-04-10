@@ -1,0 +1,226 @@
+/* ── TABLET (max 768px) ── */
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    height: auto;
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  header .nav-home-logo {
+    height: 4rem;
+    width: 4rem;
+    margin: 0;
+  }
+
+  header .company-name {
+    position: static;
+    font-size: 1rem;
+    padding-top: 0;
+  }
+
+  header .company-logo {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav {
+    width: auto;
+    gap: 1.5rem;
+  }
+
+  header li a {
+    font-size: 1.2rem;
+  }
+
+  .dropdown-menu a {
+    font-size: 1rem;
+  }
+
+  /* Self-level page */
+  .self-level-quotes {
+    padding: 3rem 1.5rem 1rem;
+  }
+
+  .self-level-quotes .tagline {
+    font-size: 1.6rem;
+  }
+
+  .self-level-info p {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* Services slider */
+  .services {
+    width: 95%;
+    padding: 1rem 0.5rem;
+    margin: 1rem auto;
+  }
+
+  .vslider-root {
+    min-height: 480px;
+    padding: 1.5rem 0 7rem 0;
+  }
+
+  .vslider-cards {
+    width: 340px;
+    height: 280px;
+  }
+
+  .vcard {
+    width: 140px;
+  }
+
+  .vcard[data-state="prev"]    { transform: translateX(-120px) rotateY(40deg) scale(0.85); }
+  .vcard[data-state="next"]    { transform: translateX(120px)  rotateY(-40deg) scale(0.85); }
+  .vcard[data-state="hidden-prev"] { transform: translateX(-220px) rotateY(55deg) scale(0.7); }
+  .vcard[data-state="hidden-next"] { transform: translateX(220px)  rotateY(-55deg) scale(0.7); }
+
+  .vcard-label .vtitle { font-size: 1.1rem; }
+  .vcard-label .vsub   { font-size: 0.6rem; }
+
+  .vslider-btn svg { width: 28px; height: 28px; }
+  .vslider-btn { padding: 0 0.75rem; }
+
+  .vslider-desc { font-size: 0.9rem; }
+
+  /* Projects before/after */
+  .ba-pair { width: 160px; }
+
+  .projects h2 { font-size: 1.5rem; }
+
+  /* Epoxy page */
+  .epoxy-quotes {
+    padding: 3rem 1.5rem 1rem;
+  }
+
+  .epoxy-quotes .tagline {
+    font-size: 1.6rem;
+  }
+
+  .epoxy-info p {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .epoxy-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0 1rem;
+  }
+
+  /* Index page */
+  .company-quotes {
+    padding: 3rem 1.5rem 3rem;
+  }
+
+  .company-quotes .tagline {
+    font-size: 1.5rem;
+  }
+
+  .company-quotes .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .company-info p {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .cta-btn {
+    margin: 4rem auto;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1.5rem;
+  }
+
+  footer .contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+  }
+
+  footer .email a {
+    font-size: 0.9rem;
+  }
+}
+
+/* ── MOBILE (max 480px) ── */
+@media (max-width: 480px) {
+
+  /* Header */
+  header {
+    padding: 0.75rem 1rem;
+  }
+
+  header .nav-home-logo {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  header .company-name {
+    font-size: 0.85rem;
+  }
+
+  header li a {
+    font-size: 1rem;
+  }
+
+  /* Slider — single card focus on small phones */
+  .vslider-cards {
+    width: 260px;
+    height: 240px;
+  }
+
+  .vcard { width: 120px; }
+
+  .vcard[data-state="prev"]    { transform: translateX(-90px) rotateY(40deg) scale(0.8); }
+  .vcard[data-state="next"]    { transform: translateX(90px)  rotateY(-40deg) scale(0.8); }
+  .vcard[data-state="hidden-prev"] { transform: translateX(-160px) rotateY(55deg) scale(0.65); }
+  .vcard[data-state="hidden-next"] { transform: translateX(160px)  rotateY(-55deg) scale(0.65); }
+
+  .vslider-root {
+    min-height: 420px;
+  }
+
+  /* Projects — 2 columns on small screens */
+  .ba-cards {
+    gap: 0.75rem;
+  }
+
+  .ba-pair { width: 140px; }
+
+  /* Epoxy gallery — stack to 1 column */
+  .epoxy-gallery {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
+  /* Footer email wrapping */
+  footer .email a {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer #copyright {
+    font-size: 0.7rem;
+  }
+}
+
+/* ── TOUCH: fix dropdown for mobile (tap to toggle) ── */
+@media (hover: none) {
+  .dropdown-menu {
+    display: none;
+  }
+}

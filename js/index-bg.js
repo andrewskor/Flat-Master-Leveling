@@ -224,12 +224,12 @@
   function initTools(){
     const W=canvas.width,H=canvas.height;
     tools=[
-      makeTool('level',W,H),    makeTool('level',W,H),
-      makeTool('rake',W,H),     makeTool('rake',W,H),
-      makeTool('shoe',W,H),     makeTool('shoe',W,H),
-      makeTool('squeegee',W,H), makeTool('squeegee',W,H),
-      makeTool('paddle',W,H),   makeTool('paddle',W,H),
-      makeTool('trowel',W,H),   makeTool('trowel',W,H),
+      makeTool('level',W,H),
+      makeTool('rake',W,H),
+      makeTool('shoe',W,H),
+      makeTool('squeegee',W,H),
+      makeTool('paddle',W,H),
+      makeTool('trowel',W,H),
     ];
   }
   initTools(); window.addEventListener('resize',initTools);
