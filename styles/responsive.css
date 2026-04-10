@@ -1,6 +1,7 @@
 /* ── TABLET (max 768px) ── */
 @media (max-width: 768px) {
 
+  /* Header */
   header {
     height: auto;
     padding: 1rem 1.5rem;
@@ -13,6 +14,17 @@
     align-items: center;
     gap: 0.5rem;
     flex-shrink: 0;
+    margin-left: 0;
+  }
+
+  header .company-logo .logo {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  header nav a {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
   header .company-name {
@@ -29,6 +41,7 @@
     width: auto;
     gap: 1rem;
     margin-left: auto;
+    margin-top: -1rem;
   }
 
   header li a {
@@ -157,8 +170,23 @@
 /* ── MOBILE (max 480px) ── */
 @media (max-width: 480px) {
 
+  /* Header */
   header {
     padding: 0.75rem 1rem;
+  }
+
+  header .company-logo {
+    margin-left: 0;
+  }
+
+  header .company-logo .logo {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  header nav a {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
   header img.nav-home-logo {
@@ -169,6 +197,10 @@
 
   header .company-name {
     display: none;
+  }
+
+  nav {
+    margin-top: -1rem;
   }
 
   header li a {
