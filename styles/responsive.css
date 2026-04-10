@@ -2,41 +2,46 @@
 @media (max-width: 768px) {
 
   /* Header */
+
   header {
     height: auto;
     padding: 1rem 1.5rem;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  header .nav-home-logo {
-    height: 4rem;
-    width: 4rem;
-    margin: 0;
-  }
-
-  header .company-name {
-    position: static;
-    font-size: 1rem;
-    padding-top: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   header .company-logo {
     align-items: center;
     gap: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  header .nav-home-logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 0;
+  }
+
+  header .company-name {
+    position: static;
+    font-size: 0.9rem;
+    padding-top: 0;
+    white-space: nowrap;
   }
 
   nav {
     width: auto;
-    gap: 1.5rem;
+    gap: 1rem;
+    margin-left: auto;
   }
 
   header li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .dropdown-menu a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   /* Self-level page */
