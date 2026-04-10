@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7rem;
+    height: 10rem;
     max-width: 100%;
     padding: 0 2rem;
     font-size: 1rem;
@@ -12,6 +12,7 @@ header {
     z-index: 100;
     overflow: visible;
 }
+
 
 header .company-logo {
     color: #3AAEDC;
@@ -39,15 +40,15 @@ header .nav-home-logo {
 header .company-name {
     padding-top: 0;
     position: absolute;
-    top: 2.5rem;
-    left: 14rem;
+    top: 3.8rem;
+    left: 15rem;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
     width: 25rem;
-    margin-top: 0;
+    margin-top: -1rem;
     align-items: center;
 }
 
